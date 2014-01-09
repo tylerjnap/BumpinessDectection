@@ -10,4 +10,7 @@
 
 @interface APLFFT : NSObject
 
+- (void)performFFT:(NSMutableArray*)array;
+
+
 @end

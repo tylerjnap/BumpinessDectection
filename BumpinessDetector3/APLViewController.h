@@ -7,7 +7,26 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "APLAccelerometer.h"
+#import "APLFFT.h"
 
 @interface APLViewController : UIViewController
+
+- (IBAction)beginCollectionButtonPressed:(id)sender;
+@property (weak, nonatomic) UIButton *buttonBeginCollection;
+
+- (IBAction)beginFFTButtonPressed:(id)sender;
+@property (weak, nonatomic) UIButton *buttonBeginFFT;
+
+- (IBAction)beginEmptyArrayButtonPressed:(id)sender;
+@property (weak, nonatomic) UIButton *buttonEmptyArray;
+
+//- (void) beginFFT:(UIButton *) sender;
+//- (void) beginCollection:(UIButton *) sender;
+
+@property (strong, nonatomic) IBOutlet UILabel *acceleration;
+
+@property (strong, nonatomic) IBOutlet UILabel *statusIndicator;
+
 
 @end

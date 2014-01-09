@@ -21,6 +21,10 @@
 		4177E51C187C730E00CF60D8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4177E4FE187C730E00CF60D8 /* UIKit.framework */; };
 		4177E524187C730E00CF60D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4177E522187C730E00CF60D8 /* InfoPlist.strings */; };
 		4177E526187C730E00CF60D8 /* BumpinessDetector3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4177E525187C730E00CF60D8 /* BumpinessDetector3Tests.m */; };
+		4177E531187C751000CF60D8 /* APLAccelerometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4177E530187C751000CF60D8 /* APLAccelerometer.m */; };
+		4177E533187C763000CF60D8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4177E532187C763000CF60D8 /* CoreMotion.framework */; };
+		4177E539187CEBCE00CF60D8 /* APLFFT.m in Sources */ = {isa = PBXBuildFile; fileRef = 4177E538187CEBCE00CF60D8 /* APLFFT.m */; };
+		4177E53B187CEC5E00CF60D8 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4177E53A187CEC5E00CF60D8 /* Accelerate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,12 @@
 		4177E521187C730E00CF60D8 /* BumpinessDetector3Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BumpinessDetector3Tests-Info.plist"; sourceTree = "<group>"; };
 		4177E523187C730E00CF60D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4177E525187C730E00CF60D8 /* BumpinessDetector3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BumpinessDetector3Tests.m; sourceTree = "<group>"; };
+		4177E52F187C751000CF60D8 /* APLAccelerometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLAccelerometer.h; sourceTree = "<group>"; };
+		4177E530187C751000CF60D8 /* APLAccelerometer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLAccelerometer.m; sourceTree = "<group>"; };
+		4177E532187C763000CF60D8 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		4177E537187CEBCE00CF60D8 /* APLFFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLFFT.h; sourceTree = "<group>"; };
+		4177E538187CEBCE00CF60D8 /* APLFFT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLFFT.m; sourceTree = "<group>"; };
+		4177E53A187CEC5E00CF60D8 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4177E53B187CEC5E00CF60D8 /* Accelerate.framework in Frameworks */,
+				4177E533187C763000CF60D8 /* CoreMotion.framework in Frameworks */,
 				4177E4FD187C730E00CF60D8 /* CoreGraphics.framework in Frameworks */,
 				4177E4FF187C730E00CF60D8 /* UIKit.framework in Frameworks */,
 				4177E4FB187C730E00CF60D8 /* Foundation.framework in Frameworks */,
@@ -101,6 +113,8 @@
 		4177E4F9187C730E00CF60D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4177E53A187CEC5E00CF60D8 /* Accelerate.framework */,
+				4177E532187C763000CF60D8 /* CoreMotion.framework */,
 				4177E4FA187C730E00CF60D8 /* Foundation.framework */,
 				4177E4FC187C730E00CF60D8 /* CoreGraphics.framework */,
 				4177E4FE187C730E00CF60D8 /* UIKit.framework */,
@@ -117,6 +131,10 @@
 				4177E50C187C730E00CF60D8 /* Main.storyboard */,
 				4177E50F187C730E00CF60D8 /* APLViewController.h */,
 				4177E510187C730E00CF60D8 /* APLViewController.m */,
+				4177E52F187C751000CF60D8 /* APLAccelerometer.h */,
+				4177E530187C751000CF60D8 /* APLAccelerometer.m */,
+				4177E537187CEBCE00CF60D8 /* APLFFT.h */,
+				4177E538187CEBCE00CF60D8 /* APLFFT.m */,
 				4177E512187C730E00CF60D8 /* Images.xcassets */,
 				4177E501187C730E00CF60D8 /* Supporting Files */,
 			);
@@ -250,7 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4177E539187CEBCE00CF60D8 /* APLFFT.m in Sources */,
 				4177E50B187C730E00CF60D8 /* APLAppDelegate.m in Sources */,
+				4177E531187C751000CF60D8 /* APLAccelerometer.m in Sources */,
 				4177E511187C730E00CF60D8 /* APLViewController.m in Sources */,
 				4177E507187C730E00CF60D8 /* main.m in Sources */,
 			);

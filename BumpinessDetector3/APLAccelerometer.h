@@ -10,4 +10,12 @@
 
 @interface APLAccelerometer : NSObject
 
+@property (assign, nonatomic) BOOL enabled;
+@property (strong, nonatomic) NSMutableArray* accelerationArray;
+
+- (void) start;
+- (void) stop;
+- (void) emptyArray;
+
+
 @end
