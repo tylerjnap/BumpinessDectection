@@ -18,7 +18,7 @@
 
 @implementation APLFFT
 
-- (void)performFFT:(NSMutableArray*)array {
++(NSArray *)performFFT:(NSMutableArray*)array {
 //    NSInteger log2n = 7; //7 --> 128 data points that this can handle (2^7 = 128)
 //    FFTSetup setup;
 //    vDSP_create_fftsetup(log2n, 0); //128 data points -- this can do
@@ -67,13 +67,22 @@
     vDSP_fft_zrip(fftSetup, &A, 1, log2n, FFT_FORWARD);
     
     //Convert COMPLEX_SPLIT A result to magnitudes
-    float amp[numSamples];
-    amp[0] = A.realp[0]/(numSamples*2);
+    
+    NSMutableArray *results = [NSMutableArray array];
+    
+    //float amp[numSamples];
+    
+    float value = A.realp[0]/(numSamples*2);
+    results[0] = isnan(value)?@(0):@(value);
     for(int i=1; i<numSamples; i++) {
-        amp[i]=sqrt(A.realp[i]*A.realp[i]+A.imagp[i]*A.imagp[i]);
-        NSLog(@"%f index: %d ",amp[i], i);
+        
+        value = A.realp[i]*A.realp[i]+A.imagp[i]*A.imagp[i]; //removed the squaroot I put in
+        results[i]=isnan(value)?@(0):@(value);
+        //NSLog(@"%f index: %d ",amp[i], i);
     }
     
+    
+    return [NSArray arrayWithArray:results];
 }
 
 

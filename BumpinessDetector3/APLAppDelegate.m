@@ -7,12 +7,16 @@
 //
 
 #import "APLAppDelegate.h"
+#import "APLAccelerometer.h"
+#import "APLFFT.h"
 
 @implementation APLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    _accel = [[APLAccelerometer alloc] init];
+    //_fft = [[APLFFT alloc] init];
     return YES;
 }
 							

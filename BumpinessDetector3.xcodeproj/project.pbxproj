@@ -25,6 +25,8 @@
 		4177E533187C763000CF60D8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4177E532187C763000CF60D8 /* CoreMotion.framework */; };
 		4177E539187CEBCE00CF60D8 /* APLFFT.m in Sources */ = {isa = PBXBuildFile; fileRef = 4177E538187CEBCE00CF60D8 /* APLFFT.m */; };
 		4177E53B187CEC5E00CF60D8 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4177E53A187CEC5E00CF60D8 /* Accelerate.framework */; };
+		4177E53E187F3C2800CF60D8 /* APLGraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4177E53D187F3C2800CF60D8 /* APLGraphViewController.m */; };
+		4177E541188072E200CF60D8 /* BarGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4177E540188072E200CF60D8 /* BarGraphView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,10 @@
 		4177E537187CEBCE00CF60D8 /* APLFFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLFFT.h; sourceTree = "<group>"; };
 		4177E538187CEBCE00CF60D8 /* APLFFT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLFFT.m; sourceTree = "<group>"; };
 		4177E53A187CEC5E00CF60D8 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		4177E53C187F3C2800CF60D8 /* APLGraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLGraphViewController.h; sourceTree = "<group>"; };
+		4177E53D187F3C2800CF60D8 /* APLGraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLGraphViewController.m; sourceTree = "<group>"; };
+		4177E53F188072E200CF60D8 /* BarGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BarGraphView.h; path = "../../joshrl-ios-bar-graph-test-f03bb2797901/BarGraph/BasicBarGraph/BarGraphView.h"; sourceTree = "<group>"; };
+		4177E540188072E200CF60D8 /* BarGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BarGraphView.m; path = "../../joshrl-ios-bar-graph-test-f03bb2797901/BarGraph/BasicBarGraph/BarGraphView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,10 +137,14 @@
 				4177E50C187C730E00CF60D8 /* Main.storyboard */,
 				4177E50F187C730E00CF60D8 /* APLViewController.h */,
 				4177E510187C730E00CF60D8 /* APLViewController.m */,
+				4177E53F188072E200CF60D8 /* BarGraphView.h */,
+				4177E540188072E200CF60D8 /* BarGraphView.m */,
 				4177E52F187C751000CF60D8 /* APLAccelerometer.h */,
 				4177E530187C751000CF60D8 /* APLAccelerometer.m */,
 				4177E537187CEBCE00CF60D8 /* APLFFT.h */,
 				4177E538187CEBCE00CF60D8 /* APLFFT.m */,
+				4177E53C187F3C2800CF60D8 /* APLGraphViewController.h */,
+				4177E53D187F3C2800CF60D8 /* APLGraphViewController.m */,
 				4177E512187C730E00CF60D8 /* Images.xcassets */,
 				4177E501187C730E00CF60D8 /* Supporting Files */,
 			);
@@ -269,10 +279,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4177E539187CEBCE00CF60D8 /* APLFFT.m in Sources */,
+				4177E541188072E200CF60D8 /* BarGraphView.m in Sources */,
 				4177E50B187C730E00CF60D8 /* APLAppDelegate.m in Sources */,
 				4177E531187C751000CF60D8 /* APLAccelerometer.m in Sources */,
 				4177E511187C730E00CF60D8 /* APLViewController.m in Sources */,
 				4177E507187C730E00CF60D8 /* main.m in Sources */,
+				4177E53E187F3C2800CF60D8 /* APLGraphViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
